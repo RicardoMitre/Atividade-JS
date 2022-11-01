@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="script.js"></script>
+    <title>Javascript - exercícios</title>
+
+</head>
+<body>
+    <span class="vertical-1"></span>
+    <span class="vertical-2"></span>
+
+    <div id="box-1" class="box">
+        <fieldset class="fieldset1">
+        <legend>Atividade 1</legend>
+            <h3>Média Aritmética</h3>
+
+            <label for="nota1" class="nota1-1">Nota 1:</label>
+            <input type="text" name="nota" id="nota1" class="nota1">
+            <br>
+            <label for="nota2" class="nota2-1">Nota 2:</label>
+            <input type="text" name="nota" id="nota2" class="nota2">
+            <br><br>
+            <button onclick="calcularNota()" class="submit">Calcualar</button>
+        </fieldset>
+        <p class="box-2">Média: <samp id="resultadom"></samp></p>
+        <p class="box-2">Situação: <samp id="situationm"></samp></p>
+    </div>
+
+    <div id="box-2" class="box">
+        <fieldset class="fieldset2">
+            <legend>Atividade 2</legend>
+            <h3>IMC</h3>
+
+            <label for="peso" class="peso-1">&nbsp;Peso:</label>
+            <input type="text" name="imc" id="peso" class="peso">
+            <br>
+            <label for="altura" class="altura-1">Altura:</label>
+            <input type="text" name="imc" id="altura" class="altura">
+            <br><br>
+            <button onclick="calcularImc()" class="submit">Calcualar</button>
+        </fieldset>
+
+        <p class="box-2">Resultado: <samp id="resultadoi"></samp></p>
+        <p class="box-2">Situação: <samp id="situationi"></samp></p>
+    </div>
+
+    <div id="box-3" class="box">
+        <fieldset class="fieldset3">
+            <legend>Atividade 3</legend>
+            <h3>appendChild()</h3>
+            
+            <label for="palavra" class="nitem-1">Novo item:&nbsp;</label>
+            <input type="text" name="palavra" id="palavra">
+            <br>
+            <input type="radio" name="cor" id="azul" value="blue">
+            <label for="azul">Azul</label>
+            
+            <input type="radio" name="cor" id="verde" value="green">
+            <label for="verde">Verde</label>
+            
+            <input type="radio" name="cor" id="vermelho" value="red">
+            <label for="vermelho">Vermelho</label>
+            <br><br>
+            <button id="enviar" class="submit">Enviar</button>
+        </fieldset>
+        <br>
+        <div>
+            <ul id="lista" class="box-2">
+                <li>Lista</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("enviar").addEventListener("click",enviar)
+    </script>
+</body>
+</html>
